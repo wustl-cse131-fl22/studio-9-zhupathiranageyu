@@ -17,12 +17,12 @@ import studio9.WordCount;
 public class WordCountTest {
 	@Test
 	public void test() {
-		List<String> words = Arrays.asList("to", "be", "or", "not", "to", "be");
+		List<String> words = Arrays.asList("to", "be", "or", "not", "to", "be", "be", "be", "be", "be", "be", "be", "be", "be", "be", "be", "be", "be");
 		Map<String, Integer> map = WordCount.countWords(words);
 		assertEquals(4, map.size());
 		Map<String, Integer> expected = new HashMap<>();
 		expected.put("to", 2);
-		expected.put("be", 2);
+		expected.put("be", 14);
 		expected.put("or", 1);
 		expected.put("not", 1);
 		assertEquals(expected, map);
